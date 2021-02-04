@@ -12,9 +12,9 @@ Posteriormente iremos para uma segunda fase, onde iremos explorar Linux e deploy
 
 
 https://semaphoreci.com/community/tutorials/building-and-testing-a-rest-api-in-go-with-gorilla-mux-and-postgresql
-create repository, clone it:
-$ git clone YOUR_REPO_URL
-$ cd YOUR_REPO_DIRECTORY
+<p> create repository, clone it:<p/>
+<br/> $ git clone YOUR_REPO_URL
+<br/> $ cd YOUR_REPO_DIRECTORY
 
 Initialize the Go modules with your GitHub repository address:
 $ go mod init github.com/REST_OF_YOUR_REPO_ADDRESS
