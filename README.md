@@ -12,20 +12,20 @@ https://semaphoreci.com/community/tutorials/building-and-testing-a-rest-api-in-g
 <br/> $ git clone YOUR_REPO_URL
 <br/> $ cd YOUR_REPO_DIRECTORY
 
-<p>Initialize the Go modules with your GitHub repository address:<p/>
+<br/>Initialize the Go modules with your GitHub repository address:
 <br/> $ go mod init github.com/REST_OF_YOUR_REPO_ADDRESS
 <br/> $ go get -u github.com/gorilla/mux 
 
-<p>https://tutorialedge.net/golang/golang-orm-tutorial/<p/>
+<br/>https://tutorialedge.net/golang/golang-orm-tutorial/
 <br/> $ go get -u github.com/jinzhu/gorm
 
-<p><p>Run in Visual Code Terminal
+<br/>Run in Visual Code Terminal
 <br/> go run main.go model.go db_connection.go
 
-<p><p>Test app with postman
+<br/>Test app with postman
 <br/> GET - http://localhost:8081/counter
 <br/> PUT - http://localhost:8081/counter
 
-<p><p>Known issues
+<br/>Known issues
 <br/> cgo: exec /missing-cc: exec: "/missing-cc": file does not exist
 <br/> solution: install the "TDM-GCC" -> https://jmeubank.github.io/tdm-gcc/download/
