@@ -29,3 +29,8 @@ go run main.go model.go db_connection.go
 Test app with postman
 GET - http://localhost:8081/counter
 PUT - http://localhost:8081/counter
+
+
+Known issues
+cgo: exec /missing-cc: exec: "/missing-cc": file does not exist
+solution: install the "TDM-GCC" -> https://jmeubank.github.io/tdm-gcc/download/
