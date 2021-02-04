@@ -9,3 +9,23 @@ Posteriormente iremos para uma segunda fase, onde iremos explorar Linux e deploy
 
 
 (...)
+
+
+https://semaphoreci.com/community/tutorials/building-and-testing-a-rest-api-in-go-with-gorilla-mux-and-postgresql
+create repository, clone it:
+$ git clone YOUR_REPO_URL
+$ cd YOUR_REPO_DIRECTORY
+
+Initialize the Go modules with your GitHub repository address:
+$ go mod init github.com/REST_OF_YOUR_REPO_ADDRESS
+$ go get -u github.com/gorilla/mux 
+
+https://tutorialedge.net/golang/golang-orm-tutorial/
+$ go get -u github.com/jinzhu/gorm
+
+Run in Visual Code Terminal
+go run main.go model.go db_connection.go
+
+Test app with postman
+GET - http://localhost:8081/counter
+PUT - http://localhost:8081/counter
