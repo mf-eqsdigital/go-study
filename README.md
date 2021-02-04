@@ -7,7 +7,7 @@ Opcionalmente podes ainda explorar como implementar Log de acesso nesta aplicaç
 Posteriormente iremos para uma segunda fase, onde iremos explorar Linux e deploy remoto, onde se espera instalares Linux (Ubuntu server) numa VM e implementes scripts de deploy remoto do programa Go que desenvolveste. Mas apos finalizares a primeira parte discutimos com mais detalhe esta etapa.
 (...)
 
-https://semaphoreci.com/community/tutorials/building-and-testing-a-rest-api-in-go-with-gorilla-mux-and-postgresql
+<br/>https://semaphoreci.com/community/tutorials/building-and-testing-a-rest-api-in-go-with-gorilla-mux-and-postgresql
 <br/> create repository, clone it:
 <br/> $ git clone YOUR_REPO_URL
 <br/> $ cd YOUR_REPO_DIRECTORY
