@@ -12,6 +12,11 @@ pipeline {
                 sh 'go build'
             }
         }
+        stage("Run"){
+            steps{
+                sh 'go run main.go model.go db_connection.go'
+            }
+        }
     }
 
 // Run on an agent where we want to use Go
