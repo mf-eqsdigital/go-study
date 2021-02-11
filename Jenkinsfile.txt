@@ -12,12 +12,12 @@ pipeline {
                 sh 'go build'
             }
         }        
-        stage('Code Analysis') {
-            steps {
-                sh 'curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | bash -s -- -b $GOPATH/bin v1.12.5'
-                sh 'golangci-lint run'
-            }
-        }
+        //stage('Code Analysis') {
+        //    steps {
+        //        sh 'curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | bash -s -- -b $GOPATH/bin v1.12.5'
+        //        sh 'golangci-lint run'
+        //    }
+        //}
         stage('Run') {
             steps {
                 sh 'go run main.go model.go db_connection.go'
