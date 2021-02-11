@@ -1,27 +1,27 @@
 pipeline {
-    // agent any
-    // tools {
-    //     go 'GO-1.15'
-    // }
-    // environment {
-    //     GO111MODULE = 'on'
-    // }
-    // stages {
-    //     stage('Compile') {
-    //         steps {
-    //             sh 'go build'
-    //         }
-    //     }
-    // }
+    agent any
+    tools {
+        go 'GO-1.15'
+    }
+    environment {
+        GO111MODULE = 'on'
+    }
+    stages {
+        stage('Compile') {
+            steps {
+                sh 'go build'
+            }
+        }
+    }
 
 // Run on an agent where we want to use Go
-node {
-    // Ensure the desired Go version is installed
-    def root = tool type: 'go', name: 'Go 1.15'
+// node {
+//     // Ensure the desired Go version is installed
+//     def root = tool type: 'go', name: 'Go 1.15'
 
-    // Export environment variables pointing to the directory where Go was installed
-    withEnv(["GOROOT=${root}", "PATH+GO=${root}/bin"]) {
-        sh 'go version'
-    }
-}
+//     // Export environment variables pointing to the directory where Go was installed
+//     withEnv(["GOROOT=${root}", "PATH+GO=${root}/bin"]) {
+//         sh 'go version'
+//     }
+// }
 }
