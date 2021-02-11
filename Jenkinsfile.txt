@@ -1,25 +1,15 @@
 pipeline {
     agent any
     tools {
-            go 'go-1.15'
-        }
+        go 'GO-1.15'
+    }
     environment {
         GO111MODULE = 'on'
     }
     stages {
-        stage('Build') {
+        stage('Compile') {
             steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                sh 'go build'
             }
         }
     }
