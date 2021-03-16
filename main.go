@@ -12,6 +12,31 @@ import (
 func main() {
 	fmt.Println("Go ORM Tutorial")
 
+	a := App{}
+	a.Initialize("test.db")
+	a.Run(":8010")
+}
+
+
+
+
+/*
+working code
+
+package main
+
+import (
+	"fmt"
+	"log"
+	"net/http"
+
+	"github.com/gorilla/mux"
+	"github.com/jinzhu/gorm"
+)
+
+func main() {
+	fmt.Println("Go ORM Tutorial")
+
 	db := DB_Connect()
 	seed_DB(db)
 
@@ -31,3 +56,5 @@ func handleRequests() {
 	myRouter.HandleFunc("/counter", updateCounter).Methods("PUT")
 	log.Fatal(http.ListenAndServe(":8081", myRouter))
 }
+
+*/

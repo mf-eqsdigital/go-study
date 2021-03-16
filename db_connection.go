@@ -4,11 +4,11 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-func DB_Connect() *gorm.DB {
+func DB_Connect(dbname string) *gorm.DB {
 	//db, err := gorm.Open(sqlite.Open("test.db"), &gorm.Config{})
-	db, err := gorm.Open("sqlite3", "test.db")
+	DB, err := gorm.Open("sqlite3", dbname)
 	if err != nil {
 		panic(err.Error())
 	}
-	return db
+	return DB
 }
