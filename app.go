@@ -6,13 +6,14 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/jinzhu/gorm"
-	"github.com/mf-eqsdigital/go-study/services"
+	//"github.com/mf-eqsdigital/go-study/testing_gomock/services/counterService"
+	//"counterService"
 )
 
 type App struct {
 	Router         *mux.Router
 	DB             *gorm.DB
-	CounterService *services.CounterService
+	CounterService *CounterService
 }
 
 func (a *App) Initialize(dbname string) {
